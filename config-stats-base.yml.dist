@@ -1,0 +1,15 @@
+database:
+    driver: pdo_sqlite
+    path: "%project_dir%/app/cache/simple_stats.sqlite"
+    charset: UTF8
+    #host: localhost
+    #port: 3006
+    #name: stats
+    #user: root
+    #password: ~
+
+models:
+    clicks
+    ips
+    logins
+
