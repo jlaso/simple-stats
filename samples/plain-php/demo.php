@@ -20,7 +20,7 @@ $barGraph = new \JLaso\SimpleStats\Graph\Bar();
     <?php $scatterGraph->draw('Example scatter', 'clicks,ips', array(0,99999999999), 600, 480); ?>
 </div>
 <div>
-    <a href="click.php?data=click_link&redirect=<?php echo(basename(__FILE__)); ?>">Click</a>
+    <a href="../click.php?data=click_link&redirect=plain-php/<?php echo(basename(__FILE__)); ?>">Click</a>
     <span>&nbsp;count [<?php echo $stats->getCountByData('ips', $stats->getUserIP());?>]</span>
 </div>
 <div>

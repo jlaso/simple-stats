@@ -7,3 +7,5 @@ composer.phar
 composer.lock
 
 temp.svg.html
+
+samples/twig/cache

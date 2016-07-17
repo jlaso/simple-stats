@@ -14,13 +14,12 @@
     "require": {
         "php": ">=5.3.9",
         "goat1000/svggraph": "^2.23",
-        "symfony/console":  "2.4.1",
-        "symfony/finder" :  "2.3.x-dev",
-        "symfony/config":   "2.*",
-        "symfony/yaml":     "2.*"
+        "symfony/yaml":     "2.*",
+        "twig/twig": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
+        "symfony/console":  "2.4.1",
         "mockery/mockery": "0.9.1"
     },
     "autoload": {

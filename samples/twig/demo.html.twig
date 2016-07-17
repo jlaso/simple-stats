@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Example of Simple Stats</h1>
+<div>
+    {{ statsGraph('scatter', 'Example scatter', 'clicks,ips', [0,99999999999], 600, 480) }}
+</div>
+<div>
+    <a href="../click.php?data=click_link&redirect=twig/{{ home() }}">Click</a>
+    <span>&nbsp;count [{{ statsCount('ips', userIP()) }}]</span>
+</div>
+<div>
+    {{ statsGraph('bar', 'Example bars', 'logins', [0,99999999999], 600, 480) }}
+</div>
+</body>
+</html>
