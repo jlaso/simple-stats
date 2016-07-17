@@ -60,15 +60,23 @@ As I told you the system uses a third party SVG library in order to represent st
 
 For the moment there are this graph available:
 
-|Graph|Uses|
-|Bar|Data ordered in a bar or piles way ![](doc/images/example-bars.png)|
-|Scatter|Data with X reference (2d) with one or several dimensions ![](doc/images/example-scatter.png)|
+## Bar
+
+Use: Data ordered in a bar or piles way 
+
+![](doc/images/example-bars.png)
+
+## Scatter
+
+Use: Data with X reference (2d) with one or several dimensions 
+
+![](doc/images/example-scatter.png)
 
 # Running the examples
 
 Go to terminal and start PHP listening in the root folder of the project ```php -S localhost:8000```
 
-Now you can go with your favourite browser to (http://localhost:8000/samples/index.html)[http://localhost:8000/samples/index.html]
+Now you can go with your favourite browser to [http://localhost:8000/samples/index.html](http://localhost:8000/samples/index.html)
 
 For the moment there are two examples. You have to see the same data in both, but using different technology. Just to show you
 how easy is to use this library.
