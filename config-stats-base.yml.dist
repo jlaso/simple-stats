@@ -1,5 +1,6 @@
 database:
     driver: pdo_sqlite
+    #path: "%project_dir%/app/cache/simple_stats.sqlite"
     path: "%project_dir%/app/cache/simple_stats.sqlite"
     charset: UTF8
     #host: localhost
@@ -9,7 +10,7 @@ database:
     #password: ~
 
 models:
-    clicks
-    ips
-    logins
+    - clicks
+    - ips
+    - logins
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleStats\Model;
+namespace JLaso\SimpleStats\Model;
 
 class Event
 {

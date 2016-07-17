@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleStats;
+namespace JLaso\SimpleStats;
 
 class Stats extends StatsBase
 {
@@ -19,7 +19,7 @@ class Stats extends StatsBase
      */
     public static function getInstance()
     {
-        if(self::$instance){
+        if(!self::$instance){
             self::$instance = new Stats();
         }
 
@@ -28,6 +28,9 @@ class Stats extends StatsBase
 
     public function insert($event, $data)
     {
-
+        if (!$model = $this->getModel($event)) {
+            throw new \Exception("Event {$event} does not have a model associated !");
+        }
+        $this->db->insertData($model, $data);
     }
 }

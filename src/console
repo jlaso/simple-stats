@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+namespace JLaso\SimpleStats;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use JLaso\SimpleStats\Command\GenGraphCommand;
+use JLaso\SimpleStats\Command\SeedCommand;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->addCommands(
+    array(
+        new SeedCommand(),
+        new GenGraphCommand(),
+    )
+);
+$application->run();
