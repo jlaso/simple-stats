@@ -159,7 +159,7 @@ class StatsBase
         if(!file_exists($configFile)) {
             $configFile = dirname(__DIR__) . '/config-stats-base.yml.dist';
             if (!file_exists($configFile)) {
-                throw new FileNotFoundException($configFile);
+                throw new \Exception("Configuration file {$configFile} not found");
             }
         }
         if(!is_readable($configFile)){
